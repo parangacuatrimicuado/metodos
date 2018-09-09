@@ -8,7 +8,7 @@ def transfecha(x):
 	ano=int(x[6:])
 	fechareal=dia+mes+ano
 	return fechareal
-print("Ingrese dos fechas en formato DD/MM/AAAA pls donde la segunda fecha es mayor que la primera")
+print("Ingrese dos fechas en formato DD/MM/AAAA plis (porfa perro) donde la segunda fecha es mayor que la primera")
 fecha1=str(input("Primera fecha: "))
 fecha2=str(input("Segunda fecha: "))
 diffechas=transfecha(fecha2)-transfecha(fecha1)

@@ -14,12 +14,11 @@ T = np.array([["A8","B8","C8","D8","E8","F8","G8","H8"]
 for i in range(8):
 	for j in range(8):
 		if n==T[i,j]:
-			print(f"el caballo se encuentra en la posicion T[i,j]")
-			M = np.array([T[i-1,j-2],T[i-2,j-1],T[i-2,j+1],T[i-1,j+2],T[i+1,j-2],T[i+2,j-1],T[i+2,j+1],T[i+1,j+2]])
+			print("el caballo se encuentra en la posicion [",T[i,j],"]")
 			print("Los posibles movimientos para el caballo son: ")
-			for i in range(8):
+			for (u,w) in [(-1,-2),(-2,-1),(-2,1),(-1,2),(1,-2),(2,-1),(2,1),(1,2)]:
 				try:
-					print(f"{M[i]}", end="") 
+					M = T[i+u,j+w]
+					print("[",M,"]", end=" ")	 
 				except:
-					continue
-
+					continue		
